@@ -1,0 +1,42 @@
+<div class="shell compare-shell">
+  <section class="hero compare-hero">
+    <div class="hero-grid compare-hero-grid">
+      <div>
+        <div class="pill">Multi-City Watch</div>
+        <div class="title">Compare<br>AQI Signals</div>
+        <div class="copy">Rank up to four cities on one screen, then jump into any city page for the full dashboard. This keeps the rich AeroVision feel while making the site genuinely dynamic.</div>
+        <form id="compare-form" class="searchbar">
+          <div class="search-shell">
+            <div class="search-label">Cities separated by commas</div>
+            <input id="compare-input" class="search-input" value="__COMPARE_CITIES__" placeholder="Delhi, Mumbai, Bengaluru">
+          </div>
+          <button class="search-button" type="submit">Compare Cities</button>
+        </form>
+        <div class="quick-picks compare-chips">
+          __FEATURED_COMPARE_CHIPS__
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="response-card compare-side-card">
+          <div>
+            <div class="kicker">Compare Board</div>
+            <div class="headline">Live ranking across cities</div>
+            <div class="soft">Find which locations need the fastest attention, then drill down into a dedicated route for full analysis.</div>
+          </div>
+          <div class="response-list">
+            <div class="response-item">Sort cities by current AQI severity.</div>
+            <div class="response-item">See dominant pollutant and estimated AQI together.</div>
+            <div class="response-item">Open a city page straight from each result card.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="compare-results-wrap" data-compare-board data-cities="__COMPARE_CITY_ATTR__">
+    <div class="section compare-section">
+      <div class="section-title">Comparison Board</div>
+      <div id="compare-results" class="compare-grid"><div class="hint">Comparison cards will appear here.</div></div>
+    </div>
+  </section>
+</div>
